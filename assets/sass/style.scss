@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.language-menu,
+.main-menu,
+.title {
+  font-family: Georgia;
+  font-variant: small-caps;
+}
+
+.language-menu {
+  float: right;
+
+  a {
+    display: block;
+    padding: 8px 10px;
+    width: 100px;
+    transition: border-left 0.3s ease-in-out;
+    border-left: 2px solid #fff;
+    color: #333;
+
+    &:hover {
+      border-left: 2px solid #a00;
+    }
+
+    &:visited {
+      color: #333;
+    }
+  }
+}
+
+.main-menu {
+  margin-top: 20px;
+  border-left: 2px solid #a00;
+  padding-left: 10px;
+
+  a {
+    float: left;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: border-bottom 0.3s ease-in-out;
+    border-bottom: 2px solid #fff;
+
+    &:hover {
+      border-bottom: 2px solid #a00;
+    }
+  }
+}
+
+.logo-container {
+  text-align: center;
+
+  .logo {
+    margin-top: 2rem;
+    width: 75%;
+  }
+}

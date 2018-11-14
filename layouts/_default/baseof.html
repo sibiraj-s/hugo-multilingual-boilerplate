@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ .Params.lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {{ if .Title }}
+    <title>{{ i18n "head_title" }} - {{ .Title }}</title>
+  {{ end }}
+
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+  {{ end }}
+
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  
+  {{ $sass := resources.Get "sass/style.scss" }}
+  {{ $style := $sass | toCSS | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>
+
+<body>
+  {{ partial "header" . }}
+
+  <div class="container-fluid pt-2">
+    {{ block "main" . }} {{end}}
+
+    <div class="logo-container">
+      <img class="logo" src="/images/hugo.svg"/ alt="hugo">
+    </div>
+  </div>
+</body>
+
+</html>

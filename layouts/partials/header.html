@@ -1,0 +1,21 @@
+<header>
+  <nav class="language-menu">
+    {{ if .IsTranslated }}
+      <nav class="LangNav">
+        {{ range .Translations }}
+         <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end}}
+      </nav>
+    {{ end }}
+  </nav>
+
+  <h1 class="title">{{ .Site.Title }}</h1>
+
+  <nav class="main-menu">
+    {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL  | absLangURL  }}">{{ .Name }}</a>
+      {{ end }}
+      <div class="clearfix"></div>
+  </nav>
+</header>

@@ -1,0 +1,47 @@
+baseURL: /
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+copyright: sibiraj-s
+disableKinds:
+  - taxonomyTerm
+languages:
+  en:
+    languageCode: en
+    contentDir: content/english
+    title: Multilingual Mode
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - url: /
+          name: Home
+          identifier: home
+          weight: 1
+        - url: /about
+          name: About
+          identifier: about
+          weight: 2
+        - url: /contact
+          name: Contact
+          identifier: contact
+          weight: 3
+  es:
+    languageCode: es
+    contentDir: content/spanish
+    title: Modo multilingüe
+    languageName: Spanish
+    weight: 2
+    menu:
+      main:
+        - url: /
+          name: Casa
+          identifier: home
+          weight: 1
+        - url: /about
+          name: Acerca de
+          identifier: about
+          weight: 2
+        - url: /contact
+          name: Contacto
+          identifier: contact
+          weight: 3

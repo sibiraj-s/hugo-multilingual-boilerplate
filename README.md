@@ -10,7 +10,7 @@
 
 Hugo is one of the most popular open-source static site generators written in [Go][go-lang]. With its amazing speed and flexibility, Hugo makes building websites fun again.
 
-Current hugo version: **v0.51**
+Recommended hugo version: **v0.91.x**
 
 ## Requirements
 

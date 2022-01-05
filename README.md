@@ -37,7 +37,7 @@ This will run hugo in the default port `http://localhost:1313`. If the port is i
 To Build the site, run
 
 ```bash
-hugo
+hugo --minify --cleanDestinationDir
 ```
 
 ## Hugo Features

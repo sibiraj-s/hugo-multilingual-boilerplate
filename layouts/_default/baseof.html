@@ -2,6 +2,7 @@
 <html lang="{{ .Params.lang }}">
 
 <head>
+  <base href="{{ .Site.BaseURL }}">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   {{ if .Title }}
@@ -14,8 +15,8 @@
     {{ end }}
   {{ end }}
 
-  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-  
+  <link rel="shortcut icon" href="images/favicons/favicon.ico">
+
   {{ $sass := resources.Get "sass/style.scss" }}
   {{ $style := $sass | toCSS | minify | fingerprint "sha512" }}
   <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
@@ -28,7 +29,7 @@
     {{ block "main" . }} {{end}}
 
     <div class="logo-container">
-      <img class="logo" src="/images/hugo.svg"/ alt="hugo">
+      <img class="logo" src="images/hugo.svg"/ alt="hugo">
     </div>
   </div>
 </body>

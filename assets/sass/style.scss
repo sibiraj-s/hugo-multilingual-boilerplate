@@ -15,22 +15,17 @@ body {
   margin: 0 auto;
 }
 
-.clearfix {
-  clear: both;
-}
-
-.language-menu,
-.main-menu,
-.title {
+.header {
+  display: flex;
+  align-items: center;
   font-family: Georgia;
   font-variant: small-caps;
 }
 
 .language-menu {
-  float: right;
+  margin-left: auto;
 
   a {
-    display: block;
     padding: 8px 10px;
     width: 100px;
     transition: border-left 0.3s ease-in-out;
@@ -53,7 +48,6 @@ body {
   padding-left: 10px;
 
   a {
-    float: left;
     width: 100px;
     text-align: center;
     padding: 5px 10px;
@@ -70,7 +64,8 @@ body {
 }
 
 .logo-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   .logo {
     margin-top: 2rem;

@@ -13,15 +13,15 @@ languages:
     weight: 1
     menu:
       main:
-        - url: /
+        - url: .
           name: Home
           identifier: home
           weight: 1
-        - url: /about
+        - url: about/
           name: About
           identifier: about
           weight: 2
-        - url: /contact
+        - url: contact/
           name: Contact
           identifier: contact
           weight: 3
@@ -33,15 +33,15 @@ languages:
     weight: 2
     menu:
       main:
-        - url: /
+        - url: .
           name: Casa
           identifier: home
           weight: 1
-        - url: /about
+        - url: about/
           name: Acerca de
           identifier: about
           weight: 2
-        - url: /contact
+        - url: contact/
           name: Contacto
           identifier: contact
           weight: 3

@@ -6,42 +6,42 @@ disableKinds:
   - taxonomyTerm
 languages:
   en:
+    languageName: English
     languageCode: en
     contentDir: content/english
     title: Multilingual Mode
-    languageName: English
     weight: 1
     menu:
       main:
-        - url: .
-          name: Home
+        - name: Home
+          url: .
           identifier: home
           weight: 1
-        - url: about/
-          name: About
+        - name: About
+          url: about/
           identifier: about
           weight: 2
-        - url: contact/
-          name: Contact
+        - name: Contact
+          url: contact/
           identifier: contact
           weight: 3
   es:
+    languageName: Spanish
     languageCode: es
     contentDir: content/spanish
     title: Modo multilingüe
-    languageName: Spanish
     weight: 2
     menu:
       main:
-        - url: .
-          name: Casa
+        - name: Casa
+          url: .
           identifier: home
           weight: 1
-        - url: about/
-          name: Acerca de
+        - name: Acerca de
+          url: about/
           identifier: about
           weight: 2
-        - url: contact/
-          name: Contacto
+        - name: Contacto
+          url: contact/
           identifier: contact
           weight: 3

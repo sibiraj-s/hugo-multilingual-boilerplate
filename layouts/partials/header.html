@@ -10,9 +10,14 @@
     {{ end }}
   </nav>
 </header>
+
 <nav class="main-menu">
-  {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      <a href="{{ .URL  | absLangURL  }}">{{ .Name }}</a>
-    {{ end }}
+  <ul>
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.main -}}
+      <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+          <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      </li>
+    {{- end }}
+  </ul>
 </nav>

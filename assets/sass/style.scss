@@ -52,6 +52,13 @@ html {
   border-left: 2px solid #a00;
   padding-left: 10px;
 
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   a {
     font-size: 18px;
     padding: 5px 10px;
@@ -60,6 +67,16 @@ html {
     border-bottom: 2px solid transparent;
 
     &:hover {
+      border-color: #a00;
+    }
+  }
+
+  li + li {
+    margin-left: 2px;
+  }
+
+  li.active {
+    a {
       border-color: #a00;
     }
   }

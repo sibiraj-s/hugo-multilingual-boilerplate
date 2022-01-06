@@ -23,10 +23,14 @@
 </head>
 
 <body>
-  {{ partial "header" . }}
 
-  <div class="container-fluid pt-2">
-    {{ block "main" . }} {{end}}
+  <div class="container">
+
+    {{ partial "header" . }}
+
+    <div class="content">
+      {{ block "main" . }} {{end}}
+    </div>
 
     <div class="logo-container">
       <img class="logo" src="images/hugo.svg"/ alt="hugo">

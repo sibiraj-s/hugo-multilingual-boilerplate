@@ -10,9 +10,14 @@ body {
   padding: 0;
 }
 
-body {
+html {
+  font-size: 16px;
+}
+
+.container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .header {
@@ -20,6 +25,7 @@ body {
   align-items: center;
   font-family: Georgia;
   font-variant: small-caps;
+  margin-bottom: 20px;
 }
 
 .language-menu {
@@ -43,24 +49,24 @@ body {
 }
 
 .main-menu {
-  margin-top: 20px;
   border-left: 2px solid #a00;
   padding-left: 10px;
 
   a {
-    width: 100px;
-    text-align: center;
-    padding: 5px 10px;
-    margin: 0;
-    text-decoration: none;
     font-size: 18px;
+    padding: 5px 10px;
+    text-decoration: none;
     transition: border-bottom 0.3s ease-in-out;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid transparent;
 
     &:hover {
-      border-bottom: 2px solid #a00;
+      border-color: #a00;
     }
   }
+}
+
+.content {
+  margin-bottom: 2rem;
 }
 
 .logo-container {
@@ -68,7 +74,6 @@ body {
   justify-content: center;
 
   .logo {
-    margin-top: 2rem;
     width: 75%;
   }
 }

@@ -15,7 +15,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:

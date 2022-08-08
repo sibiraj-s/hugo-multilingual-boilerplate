@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.99.0
 
 permissions:
-  content: read
+  contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

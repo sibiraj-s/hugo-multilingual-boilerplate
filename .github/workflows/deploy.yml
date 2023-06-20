@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  HUGO_VERSION: 0.99.0
+  HUGO_VERSION: 0.114.0
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

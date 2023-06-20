@@ -30,7 +30,10 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Build
-        run: hugo --minify --baseURL ${{ steps.pages.outputs.base_url }}
+        run: hugo --gc --minify --baseURL ${{ steps.pages.outputs.base_url }}
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
